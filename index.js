@@ -8,7 +8,7 @@ const bodyParser =require("body-parser")
 const teacherRoutes = require('./Routers/teacher')
 const cors= require("cors");
 const dotenv = require("dotenv")
-const port = 5000;
+const port = process.env.PORT|| 5000;
 
 dotenv.config({
     path:"./config.env",
